@@ -5255,7 +5255,7 @@ CONFIG_PACKAGE_ip-full=y
 CONFIG_PACKAGE_openvpn-easy-rsa=y
 CONFIG_PACKAGE_openvpn-mbedtls=y
 # CONFIG_PACKAGE_openvpn-nossl is not set
-CONFIG_PACKAGE_openvpn-openssl=y
+# CONFIG_PACKAGE_openvpn-openssl=y
 # CONFIG_PACKAGE_pptpd is not set
 # CONFIG_PACKAGE_softethervpn-base is not set
 # CONFIG_PACKAGE_softethervpn-bridge is not set
