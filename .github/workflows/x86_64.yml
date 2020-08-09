@@ -2,12 +2,12 @@ name: OpenWrt-CI-x86_64
 
 on:
   push:
-    branches:
-     - master
-  schedule:
-    - cron: 0 16 * * *
-  release:
-    types: [published]
+    #branches:
+     #- master
+  #schedule:
+  #  - cron: 0 16 * * *
+  #release:
+  #  types: [published]
 
 jobs:
 
@@ -98,6 +98,9 @@ jobs:
           # https://github.com/esirplayground/AutoBuild-OpenWrt/blob/master/x86_64.config
           # ikuai + AP
           # opkg install *.ipk
+          # opkg install python3
+          # opkg install python3-pip
+          # pip3 install speedtest-cli
           # 包升级命令
           # opkg update
           
