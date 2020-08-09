@@ -96,6 +96,8 @@ jobs:
           # 
           # 无论你想要对固件进行怎样的定制, 都需要且只需要修改 EOF 回环内的内容.
           # https://github.com/esirplayground/AutoBuild-OpenWrt/blob/master/x86_64.config
+          # 高大全 https://drive.google.com/drive/folders/1rG8fl84KVpd0jK7Yc-KobspDC9Y64sGa
+          # 精品小包 https://drive.google.com/drive/folders/1eyIxVfyzO4nyzaT1sSr6xWf50_5YJN7g
           # ikuai + AP
           # opkg install *.ipk
           # opkg install python3
