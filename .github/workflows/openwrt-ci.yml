@@ -8,18 +8,13 @@
 name: OpenWrt-CI
 
 on:
-<<<<<<< HEAD
   push:
     branches:
       - master
   #schedule:
   #  - cron: 0 17 * * *
-=======
-  schedule:
-    - cron: 0 20 * * *
   release:
     types: [published]
->>>>>>> a07a47018c823852d63ef36dc4c0711bc0062a75
 
 jobs:
 
@@ -118,18 +113,14 @@ jobs:
           cp -rf $(find ./bin/targets/ -type f -name "*.buildinfo" -o -name "*.manifest") ./artifact/buildinfo/
 
       - name: Deliver buildinfo
-        uses: actions/upload-artifact@v2
-        with:
-          name: OpenWrt_buildinfo
-          path: ./artifact/buildinfo/
+          uses: actions/upload-artifact@v2
+          with:
+            name: OpenWrt_buildinfo
+            path: ./artifact/buildinfo/
 
       - name: Deliver package
         uses: actions/upload-artifact@v2
         with:
-<<<<<<< HEAD
-          name: OpenWrt_firmware
-          path: ./bin/targets/
-=======
           name: OpenWrt_package
           path: ./artifact/package/
 
@@ -138,7 +129,6 @@ jobs:
         with:
           name: OpenWrt_firmware
           path: ./bin/targets/
-  
 
       - name: Upload release asset
         if: github.event == 'release'
@@ -148,4 +138,3 @@ jobs:
           file: ./artifact/firmware/*
           tag: ${{ github.ref }}
           file_glob: true
->>>>>>> a07a47018c823852d63ef36dc4c0711bc0062a75
